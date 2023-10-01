@@ -47,8 +47,8 @@ For the module to function correctly, it expects a JSON object stored as a secre
   "githubAppID": "<your-github-app-id>",
   "githubAppInstallationID": "<your-github-app-installation-id>",
   "githubAppPrivateKey": "<your-github-app-private-key>",
-  "project": "<your-project-name>",
-  "type": "<repository-type>",
+  "project": "default",
+  "type": "git",
   "url": "<repository-url>"
 }
 ```
@@ -57,8 +57,8 @@ For the module to function correctly, it expects a JSON object stored as a secre
 ### Notes
 The argocdServerAdminPassword for ArgoCD is stored in a bcrypt hashed format.
 The GitHub credentials used for ArgoCD are fetched from a Google Secret Manager secret.
-License
-Choose an appropriate license for your module and add details here, for example, "MIT".
+## License
+GPL-3.0 license
 
 ## Author
 Mirsad Sabovic
