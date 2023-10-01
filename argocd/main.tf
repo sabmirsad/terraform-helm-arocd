@@ -95,6 +95,6 @@ resource "kubernetes_secret" "github_creds" {
     githubAppPrivateKey     = local.github_repo_secret.githubAppPrivateKey
   }
 
-  depends_on = [helm_release.argocd]
+  depends_on = [data.google_secret_manager_secret_version.github_repo_secret, helm_release.argocd]
 }
 
