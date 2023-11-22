@@ -31,6 +31,7 @@ resource "helm_release" "argocd" {
     name  = "configs.secret.argocdServerAdminPassword"
     value = bcrypt_hash.argo.id
   }
+  values = var.argocd_values
 }
 
 data "google_secret_manager_secret_version" "github_repo_secret" {

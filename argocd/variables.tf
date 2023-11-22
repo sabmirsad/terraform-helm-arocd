@@ -23,3 +23,7 @@ variable "argocd_chart_version" {
   description = "Argocd chart version to be deployed"
   type        = string
 }
+variable "argocd_values" {
+ description = "helm values for argocd"
+ type = string
+}
