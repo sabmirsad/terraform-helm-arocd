@@ -24,6 +24,6 @@ variable "argocd_chart_version" {
   type        = string
 }
 variable "argocd_values" {
- description = "helm values for argocd"
- type = string
+  description = "helm values for argocd"
+  type        = string
 }

@@ -7,7 +7,7 @@ module "argocd" {
   gh_repo_secret       = var.gh-repo-secret
   argocd_chart_version = "5.46.7"
 
-# This resource could be used in the same terraform apply with
-# cluster creation: just uncomment the line under and set the dependency resource 
+  # This resource could be used in the same terraform apply with
+  # cluster creation: just uncomment the line under and set the dependency resource 
   #   depends_on = [ google_container_cluster.my_cluster ]
 }
